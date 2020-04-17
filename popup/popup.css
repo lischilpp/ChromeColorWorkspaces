@@ -1,0 +1,28 @@
+html, body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: block;
+    float: left;
+    padding: 15px 50px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+ul li.current {
+    border-color: #ccc!important;
+}
+
+ul li:hover {
+    border-color: #fff;
+}
+
+ul li:active {
+    box-shadow: inset 0 0 10px #fff;
+}

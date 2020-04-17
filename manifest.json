@@ -1,0 +1,15 @@
+{
+  "name": "Chrome Workspace Manager",
+  "version": "0.1",
+  "description": "Switch between tab workspaces",
+  "permissions": ["storage", "tabs"],
+  "options_page": "options/options.html",
+  "background": {
+    "scripts": ["background/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html"
+  },
+  "manifest_version": 2
+}
