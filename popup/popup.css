@@ -5,6 +5,8 @@ html, body, ul {
 
 ul {
     list-style-type: none;
+    columns: 2;
+    column-gap: 0px;
 }
 
 ul li {
