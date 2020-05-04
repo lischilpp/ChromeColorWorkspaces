@@ -2,17 +2,24 @@ let defaultWorkspaces = [
   { color: '#2f2f2f', tabs: [''], highlightedTab: 0 },
   { color: '#903216', tabs: [''], highlightedTab: 0 },
   { color: '#d24091', tabs: [''], highlightedTab: 0 },
-  { color: '#7f8c8d', tabs: [''], highlightedTab: 0 },
-  { color: '#e0e0e0', tabs: [''], highlightedTab: 0 },
-  { color: '#7f40d2', tabs: [''], highlightedTab: 0 },
-  { color: '#360f96', tabs: [''], highlightedTab: 0 },
-  { color: '#c71a1c', tabs: [''], highlightedTab: 0 },
-  { color: '#fe7511', tabs: [''], highlightedTab: 0 },
-  { color: '#fadc10', tabs: [''], highlightedTab: 0 },
-  { color: '#40d252', tabs: [''], highlightedTab: 0 },
-  { color: '#3ce0de', tabs: [''], highlightedTab: 0 },
-  { color: '#187efc', tabs: [''], highlightedTab: 0 },
-  { color: '#1c18fc', tabs: [''], highlightedTab: 0 },
+  { color: '#009665', tabs: [''], highlightedTab: 0 },
+  { color: '#ffffff', tabs: [''], highlightedTab: 0 },
+  { color: '#a6bdb8', tabs: [''], highlightedTab: 0 },
+  { color: '#0090b1', tabs: [''], highlightedTab: 0 },
+  { color: '#d2adde', tabs: [''], highlightedTab: 0 },
+  { color: '#d27676', tabs: [''], highlightedTab: 0 },
+  { color: '#a58462', tabs: [''], highlightedTab: 0 },
+
+  { color: '#ff0029', tabs: [''], highlightedTab: 0 },
+  { color: '#ff7500', tabs: [''], highlightedTab: 0 },
+  { color: '#ffeb00', tabs: [''], highlightedTab: 0 },
+  { color: '#00ff07', tabs: [''], highlightedTab: 0 },
+  { color: '#00ffe7', tabs: [''], highlightedTab: 0 },
+  { color: '#00adff', tabs: [''], highlightedTab: 0 },
+  { color: '#004aff', tabs: [''], highlightedTab: 0 },
+  { color: '#8831ff', tabs: [''], highlightedTab: 0 },
+  { color: '#375c8c', tabs: [''], highlightedTab: 0 },
+  { color: '#788fb7', tabs: [''], highlightedTab: 0 },
 ]
 
 let workspaces, currentWorkspace
@@ -20,7 +27,7 @@ let workspaces, currentWorkspace
 chrome.storage.local.get('workspaces', (result) => {
   if (typeof result.workspaces == 'undefined') {
     workspaces = defaultWorkspaces
-    chrome.storage.local.set({dict: defaultWorkspaces})
+    chrome.storage.local.set({workspaces: defaultWorkspaces})
   } else {
     workspaces = result.workspaces
   }
